@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+W3C validator returned 5 errors. I will no longer address any errors returned by the validator. Please look it up.
+
+For the footer site nav, you could have also used border right or left in CSS instead creating a span and css for hiding the pipes.
+
+Naming your responsive css file "media" is a bit confusing. My first thought was images or video or something along those lines. You can call it responsive.css or media-queries.css or something like that.
+
+The page looks great and scales down nicely but one of the requirements for this assignment was to make it fluid responsive. The media queries for 880px and below default to a fixed width which is appropriate for an adaptive site. The 1280px down to 939px were a good use of fluid and responsive techniques.
+
+The @font-face declaration links to different font files but there is only the .tff file in your font folders.
+
+Avoid declarations like this. Either you write the declarations as shorthand or longhand (though shorthand is ideal) not declare it shorthand and then immediately override the values using shorthand.
+margin: 0 auto;
+margin-left: 182px;
+margin-right: 75px;
+
+
+HTML: 13/15
+
+Desktop:
+CSS: 13/15
+1280 layout: 13/15
+1024 layout: 9/10
+
+Mobile:
+CSS: 13/15
+320 layout: 13.5/15
+
+Scalability/flexibility of page: 8.5/10
+Organization & following instructions: 4.5/5
+
+Late: -5
+
+Total 82.5/100
+-->
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="author" content="Dustin Gamble">
+		<meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body>
+		<header>
+				<h1>Game Of Thrones</h1>
+		</header>
+
+		<div id="wrapper">
+
+			<div class="content-wrap">
+				<div id="hero">
+				</div>	
+				<article>
+					<h2>Season 3 Returns March 1st</h2>
+					<p>The Game of Thrones season 3 trailers come just weeks after HBO released 23 large high-quality photos from the highly anticipated third season of Game of Thrones. Some of the Game of Thrones Season 3 photos include well known characters like Jon Snow, Daenerys Targaryen and Tyrion Lannister, along with new characters joining the show this season such as Wildling leader Mance Rayder and the Lady Olenna the Queen of Thorns.</p>
+
+					<p>The Fantasy series is based off “A Song of Ice and Fire,” a series of five novels by George R.R. Martin. Its first season has won several of the most prestigious awards doled out to television shows including Emmys and Golden Globes.</p>
+					<hr>
+				</article>
+
+				<div id="words">
+					<h3>Trailers</h3>
+					<div id="trailer1" class="column">
+						<a href="http://goo.gl/AInwt" target="_blank"><img src="images/trailer1.jpg" alt="preview"></a>
+						<h4>Season 3 Extended Trailer</h4>
+						<p>“I am going to fight for the side that fights for the living.” <a href="http://goo.gl/AInwt" target="_blank">Watch a season 3 extended trailer.</a></p>
+					</div>
+
+					<div id="trailer2" class="column">	
+						<a href="http://goo.gl/ji9pe" target="_blank"><img src="images/trailer2.jpg" alt="preview"></a>
+						<h4>Season 3 Returns March 1st</h4>
+						<p>“I am going to fight for the side that fights for the living.” <a href="http://goo.gl/ji9pe" target="_blank">Watch a season 3 extended trailer.</a></p>
+					</div>
+
+					<div id="trailer3" class="column">
+						<a href="http://goo.gl/QHOVn" target="_blank"><img src="images/trailer3.jpg" alt="preview"></a>
+						<h4>Season 3 "The Beast" Preview</h4>
+						<p>“There is a beast in every man and it stirs when you put a sword in his hand.” <a href="http://goo.gl/QHOVn" target="_blank">Watch a season 3 preview.</a></p>
+					</div>
+					<hr>
+				</div> <!-- words -->
+			</div>	<!-- <-content-wrap -->
+
+
+			<aside>
+				<h2>Features</h2>
+				<ul>
+					<li>
+						<img src="images/exhibition.jpg" alt="exhibition">
+						<p>The Game of Thrones Exhibition will be in NYC from 3/28-4/3 at 3 W. 57th St (between 5th and 6th Avenue) and open to the public.<a href="http://itsh.bo/YsaRPY" target="_blank">http://itsh.bo/YsaRPY</a></p>
+					</li>
+					<hr>
+					<li>
+						<img src="images/dragon.jpg" alt="dragon">
+						<p>Remember when Daenerys "took what is hers?" Catch-up before Season 3 with the newly launched catch-up guide: <a href="http://itsh.bo/ZyjnhA" target="_blank">http://itsh.bo/ZyjnhA</a></p>
+					</li>
+					<hr>
+					<li>	
+						<img src="images/jonSnow.jpg" alt="Jon Snow">
+						<p>"Jon Snow" by Jock released at the Game of Thrones Mondo Gallery show at SXSW: <a href="http://on.fb.me/16Kn60Q" target="_blank">http://on.fb.me/16Kn60Q</a></p>
+					</li>	
+					<hr>
+					<li>
+						<img src="images/GQ.jpg" alt="fashion">
+						<p>SPOTTED: A Lannister in denim via GQ Magazine: <a href="http://itsh.bo/ZexJCn" target="_blank">http://itsh.bo/ZexJCn</a></p>
+					</li>
+					<hr>	
+				</ul>
+			</aside>
+
+			<footer class="content-wrap">
+				
+				<ul>
+					<li><a href="#">episodes</a> <span>|</span></li>
+					<li><a href="#">talk</a> <span>|</span></li>
+					<li><a href="#">cast & crew</a> <span>|</span></li>
+					<li><a href="#">about</a> <span>|</span></li>
+					<li><a href="#">shop</a></li>
+				</ul>	
+				<p>site developed by Dustin Gamble 2013</p>
+			</footer>
+			
+		</div> <!-- <- wrapper -->
+	</body>
+</html>	
